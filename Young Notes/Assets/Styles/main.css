@@ -1,0 +1,300 @@
+/* 
+Young Notes Base Style Sheet
+
+
+Author:
+Date:05/09/2021
+Filename:	main.css
+Supporting Files: 
+
+
+*/
+
+/* Display HTML5 structural elements as blocks */
+article, aside, figure, figcaption, footer, hgroup, header
+section, nav
+{
+	display: block;
+}
+
+/* Set the default page element styles */
+body
+{
+	margin: 0px auto;
+	width: 800px;
+}
+
+body *
+{
+	font-family: Verdana, Geneva, san-serif;
+	font-size: 100%;
+	font-weight: inherit;
+	line-height: 1.2em;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	vertical-align: baseline;
+
+}
+
+/* Navigation links */
+ nav ul
+ {
+	 list-style: none;
+	 margin-top: 5px;
+ }
+ 
+ nav li 
+ {
+	 float: left;
+	 width: 19%;
+	 text-align: center;
+	 border: 1px solid rgb(68, 76, 169);
+	 margin: 5px 2px 15px 2px;
+	 font-size: smaller;
+ }
+
+nav li a 
+{
+	display: block;
+	color: rgb(68, 76, 169);
+	text-decoration: none;
+	background-color: white;
+}
+
+nav li a:hover
+{
+	color: white;
+	background-color: rgb(68,76,169);
+}
+
+/* h1, h2, P */
+h1 
+{
+	font-size: 20px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	color: rgb(68, 76, 169);
+	margin-top: 15px;
+}
+
+h2
+{
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	color: rgb(68, 76, 169);
+	margin-top: 15px;
+	
+}
+
+p 
+{
+	margin: 7px;
+}
+
+#main
+{
+	border-top: 2px solid rgb(68, 76, 169);
+}
+
+main ul
+{
+	list-style-type: circle;
+	margin-left: 50px;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#main ul li
+{
+	margin-bottom: 10px;
+	font-size: smaller;
+}
+
+#main ul li strong
+{
+	font-weight: normal;
+	color: rgb(68, 76, 169);
+}
+
+footer 
+{
+	border-top: 2px solid rgb(68, 76, 169);
+	clear: inherit;
+	float: left;
+	width: 100%;
+	
+}
+
+address
+{
+	font-style: normal;
+	font-size: 10px;
+	text-align: center;
+	padding: 5px;
+}
+
+/* images styles */
+img.irregularWrap
+{
+	clear: right;
+	float: right;
+	margin: 0px;
+}
+table
+{
+	font-size: 14px;
+	border-collapse: collapse;
+	border: 10px outset rgb(68, 76, 169);
+	margin: 10px auto;
+	width: 400px;
+}
+thead
+{
+	background-color: ivory;
+}
+
+th, td 
+{
+	border: 1px solid black;
+	vertical-align: top;
+	padding: 5px;
+}
+
+tr,td:nth-of-type(2), tr,td:nth-of-type(3)
+{
+	text-align: right;
+}
+.feeColumns
+{
+	background-color: rgb(232, 232, 255);
+}
+aside
+{
+	display: block;
+	width: 400px;
+	float: right;
+	background-color: ivory;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 5px 0px 20px 20px;
+}
+aside img 
+{
+	float: right;
+	margin: 5px;
+}
+aside 
+{
+	height: 250px;
+	overflow: auto;
+}
+audio, object, embed
+{
+	display: block;
+	margin: 15px auto;
+}
+
+/* field set styles */
+fieldset
+{
+	background-color: rgb(213, 231, 255);
+	border: 1px solid rgb(67, 76, 169);
+	float: left;
+	margin: 10px 0px 10px 2.5%;
+	width: 46%
+}
+legend
+{
+	background-color: rgb(67, 76, 169);
+	color: white;
+	padding: 5px;
+}
+/* label styles */
+label
+{
+	clear: left;
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 7px 4% 7px 5px;
+	width: 40%;
+}
+/* input control styles */
+input
+{
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 7px 0px;
+	width: 50%;
+}
+/* selection list styles*/
+select
+{
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 7px 0px;
+}
+/* year styles */
+#years
+{
+	width: 50px;
+}
+
+/* checkbox styles */
+input#call
+{
+	clear: left;
+	width: 25px;
+}
+input#call+label
+{
+	clear: none;
+	width: auto;
+}
+/* button styles */
+input[type="submit"]
+{
+	clear: left;
+}
+input[type="submit"], input[type="reset"]
+{
+	height: 40px;
+	margin-right: 20px;
+	width: 200px;
+}
+/* validation styles */
+input:focus, select:focus
+{
+	background-color: ivory;
+}
+input:focus:valid 
+{
+	background: rgb(220, 255, 220) url(go.png) bottom right no-repeat;
+	
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+input:focus:invalid
+{
+	background: rgb(220, 255, 220) url(stop.png) bottom right no-repeat;
+	
+	-o-background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+
+
+
+
+
+
+
+
